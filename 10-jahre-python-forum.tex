@@ -1,9 +1,9 @@
 \documentclass{beamer}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{fontspec}
+\usepackage{xltxtra}
 \usepackage{texments}
-\usepackage{lmodern}
-\usepackage{wasysym}
+\usepackage{unicode-math}
 \usepackage{csquotes}
 \usepackage{ccicons}
 
@@ -14,6 +14,11 @@
 \institute{PyCon DE 2012}
 
 \begin{document}
+
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\setmathfont{Latin Modern Math}
 
 \frame{
   \titlepage
@@ -36,7 +41,7 @@
     \begin{itemize}
       \item Einfacher erreichbar als Mailingliste, Newsgroup etc. da im Browser
       \item Strukturierter -- durchsuchbar, Unterkategorien
-      \item Syntax-Highlighting \smiley
+      \item Syntax-Highlighting {\setsansfont{DejaVu Sans}\selectfont ☺}
     \end{itemize}
   \end{block}
 \end{frame}
