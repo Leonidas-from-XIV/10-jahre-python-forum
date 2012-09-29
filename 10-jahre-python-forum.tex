@@ -6,6 +6,7 @@
 \usepackage{unicode-math}
 \usepackage{csquotes}
 \usepackage{ccicons}
+\usepackage{tikz}
 
 \mode<presentation>{\usetheme{Copenhagen}}
 \usecolortheme{python}
@@ -31,6 +32,14 @@
 }
 
 \newcommand{\dejavu}[1]{{\setsansfont{DejaVu Sans}\selectfont #1}}
+
+\begin{frame}[plain]
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[at=(current page.center)] {
+      \includegraphics[width=\paperwidth]{screenshot}
+    };
+  \end{tikzpicture}
+\end{frame}
 
 \begin{frame}{Was ist dieses Forum?}
   \begin{block}{Python-Forum}
